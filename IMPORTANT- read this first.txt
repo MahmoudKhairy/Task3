@@ -1,0 +1,11 @@
+You will see two folder and file.
+
+-The front end folder contain only the design of mahmoud khairy. 
+
+-The profile system folder is the folder which contain the whole project front end and the back end.
+
+I do this becuase when i do my task the back end i faced  problems that the design go wrong after i writing the php code , i don't 
+know why this happen , i tried differant methods to solve this problem , and now i think the problem may be in my browser
+or in my editor so that i put the design in a folder and the project in another folder.
+i hope you look at my code , i don't know until now where the problem.
+thanks! 

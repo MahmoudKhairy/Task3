@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 130vh;
+    background: linear-gradient(110deg, #00D0CA, #275BE9, #FF04CD);
+    background-size: 400% 400%;
+    animation: animatedGradient 20s ease infinite;
+}
+
+.logo {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    transition: 0.3s;
+}
+
+.registerbox {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.registerbox .inputBox {
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.registerbox .inputBox input {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    outline: white;
+    background: transparent;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.registerbox .inputBox input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error{
+    display:block;
+    width: 60%;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: 0.3s;
+    color: #fff;
+    background-color: #ff2020;
+    border-radius: 10px;
+    animation: bounce 1s ease infinite;
+}
+
+input[type=submit] {
+    width: 70%;
+    height: 50px;
+    display: block;
+    margin: 40px auto 0;
+    font-size: 24px;
+    color: #2E7AE5;
+    border: 2px solid #fff;
+    outline: white;
+    background: #fff;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+    .logo img {
+        width: 200px;
+    }
+
+    .registerbox {
+        width: 55%;
+        top: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo img {
+        width: 230px;
+    }
+
+    .registerbox {
+        width: 40%;
+        top: 64%;
+    }
+}
